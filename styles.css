@@ -1,0 +1,87 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+}
+
+/* Section 1 Styling */
+.section-1 img {
+    width: 100%; /* Covers entire width */
+    height: 100%; /* Covers entire height */
+    object-fit: cover;
+}
+
+/* Other Sections Styling */
+section img {
+    width: 1600px; /* Customize width */
+    height: 1000px; /* Customize height */
+    object-fit: contain; /* Ensures image fits without distortion */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Section 4 Styling */
+.section-4 {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center;    /* Center images vertically */
+    gap: 20px;              /* Space between images */
+    height: 70vh;           /* Section height */
+    background-color: #ffffff; /* Optional background color */
+}
+
+.section-4 img {
+    border: 2px solid rgb(255, 255, 255);
+    object-fit: cover; /* Ensures images don't distort */
+}
+
+/* Specific styling for individual images */
+.signup-image {
+    width: 30%;
+    height: auto;
+}
+
+.ratings-image {
+    width: 25%;
+    height: auto;
+}
+
+.section-5 {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;    /* Center content vertically */
+    height: 10vh;           /* Define the height of Section 5 */
+    background-color: #ffffff; /* Optional background color */
+    padding: 20px;
+}
+
+/* Section 6 Styling */
+.section-6 {
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center;    /* Center image vertically */
+    height: 70vh;           /* Section height */
+    background-color: #ffffff; /* Optional background color */
+}
+
+.section-6 img {
+    width: 60%; /* Set the desired width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid rgb(255, 255, 255); /* Optional border */
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+}
+
