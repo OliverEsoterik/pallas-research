@@ -11,25 +11,26 @@ body {
     overflow-x: hidden;
 }
 
+/* Section Styling */
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 70vh;
+    height: auto; /* Allow the height to adjust based on content */
 }
 
 /* Section 1 Styling */
 .section-1 img {
     width: 100%; /* Covers entire width */
-    height: 100%; /* Covers entire height */
+    height: auto; /* Adjust height to maintain aspect ratio */
     object-fit: cover;
 }
 
 /* Other Sections Styling */
 section img {
-    width: 1600px; /* Customize width */
-    height: 1000px; /* Customize height */
+    max-width: 100%; /* Prevent image from exceeding container width */
+    height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures image fits without distortion */
     border-radius: 8px; /* Optional rounded corners */
 }
@@ -40,13 +41,14 @@ section img {
     justify-content: center; /* Center images horizontally */
     align-items: center;    /* Center images vertically */
     gap: 20px;              /* Space between images */
-    height: 70vh;           /* Section height */
+    height: auto;           /* Allow height to adjust based on content */
     background-color: #ffffff; /* Optional background color */
+    flex-wrap: wrap;        /* Allow images to wrap on smaller screens */
 }
 
 .section-4 img {
     border: 2px solid rgb(255, 255, 255);
-    object-fit: cover; /* Ensures images don't distort */
+    object-fit: cover;
 }
 
 /* Specific styling for individual images */
@@ -60,6 +62,7 @@ section img {
     height: auto;
 }
 
+/* Section 5 Styling */
 .section-5 {
     display: flex;
     justify-content: center; /* Center content horizontally */
@@ -67,6 +70,7 @@ section img {
     height: 10vh;           /* Define the height of Section 5 */
     background-color: #ffffff; /* Optional background color */
     padding: 20px;
+    width: 100%;            /* Ensure section takes full width */
 }
 
 /* Section 6 Styling */
@@ -74,7 +78,7 @@ section img {
     display: flex;
     justify-content: center; /* Center image horizontally */
     align-items: center;    /* Center image vertically */
-    height: 70vh;           /* Section height */
+    height: auto;           /* Allow height to adjust based on content */
     background-color: #ffffff; /* Optional background color */
 }
 
@@ -85,3 +89,23 @@ section img {
     object-fit: contain; /* Ensures the entire image fits without cropping */
 }
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .section-4 {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 10px; /* Adjust gap between images */
+    }
+
+    .signup-image,
+    .ratings-image {
+        width: 80%; /* Make images wider on mobile */
+    }
+
+    .section-5 {
+        height: 15vh; /* Adjust height for mobile screens */
+    }
+
+    .section-6 img {
+        width: 80%; /* Make image larger on mobile */
+    }
+}
