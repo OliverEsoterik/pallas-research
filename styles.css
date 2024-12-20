@@ -22,9 +22,19 @@ section {
 
 /* Section 1 Styling */
 .section-1 img {
+    margin-top: 70px;
     width: 100%; /* Covers entire width */
     height: auto; /* Adjust height to maintain aspect ratio */
     object-fit: cover;
+}
+
+.section-2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto; /* Allow the height to adjust based on content */
 }
 
 /* Other Sections Styling */
@@ -33,6 +43,16 @@ section img {
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensures image fits without distortion */
     border-radius: 8px; /* Optional rounded corners */
+}
+
+.section-3 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto; /* Allow the height to adjust based on content */
 }
 
 /* Section 4 Styling */
@@ -44,6 +64,7 @@ section img {
     height: auto;           /* Allow height to adjust based on content */
     background-color: #ffffff; /* Optional background color */
     flex-wrap: wrap;        /* Allow images to wrap on smaller screens */
+    margin-bottom: 0;
 }
 
 .section-4 img {
@@ -67,26 +88,12 @@ section img {
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center;    /* Center content vertically */
-    height: 10vh;           /* Define the height of Section 5 */
+    height: 20vh;           /* Narrow height for Section 5 */
     background-color: #ffffff; /* Optional background color */
     padding: 20px;
     width: 100%;            /* Ensure section takes full width */
-}
-
-/* Section 6 Styling */
-.section-6 {
-    display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center;    /* Center image vertically */
-    height: auto;           /* Allow height to adjust based on content */
-    background-color: #ffffff; /* Optional background color */
-}
-
-.section-6 img {
-    width: 60%; /* Set the desired width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid rgb(255, 255, 255); /* Optional border */
-    object-fit: contain; /* Ensures the entire image fits without cropping */
+    margin-top: 0;          /* Remove any top margin */
+    margin-bottom: 150px;
 }
 
 /* Media Query for Mobile Devices */
@@ -102,7 +109,7 @@ section img {
     }
 
     .section-5 {
-        height: 15vh; /* Adjust height for mobile screens */
+        height: 20vh; /* Adjust height for mobile screens */
     }
 
     .section-6 img {
